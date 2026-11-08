@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="en-NZ"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Term 4 · Week 5 Reading Taskboard</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"><style>
+:root{--navy:#1b2348;--purple:#6345cb;--mint:#b7f3da;--peach:#ffb28a;--paper:#f6f3fd;--ink:#182341}*{box-sizing:border-box}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,Arial,sans-serif;background:var(--paper);color:var(--ink)}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}header{background:linear-gradient(135deg,#202a51,#643fba);color:white;padding:44px 0 30px;border-bottom:9px solid var(--mint)}
+header h1{font-size:clamp(43px,7vw,79px);line-height:1;margin:12px 0}header h1 span{color:var(--peach)}
+.eyebrow,.tag{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:900}.eyebrow{color:var(--mint)}.tag{color:var(--purple)}
+.badge,.roomlink{display:inline-block;background:var(--mint);border-radius:30px;color:var(--navy);font-weight:850;padding:9px 14px;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin:17px 0}button{border:2px solid #5c48b3;color:var(--ink);background:white;border-radius:15px;padding:12px 15px;font:inherit;font-weight:800;cursor:pointer}
+button[aria-pressed=true]{color:white;background:var(--purple);border-color:var(--purple)}header button[aria-pressed=true]{background:var(--peach);color:var(--navy);border-color:var(--peach)}
+button:focus-visible,a:focus-visible{outline:3px solid #f19a56;outline-offset:3px}.groupnav button,.sessionnav button{flex:1;min-width:150px}.sessionnav small{display:block;font-size:12px;font-weight:500}
+.panel{background:white;border:1px solid #e0ddef;border-radius:19px;padding:24px;margin:20px 0;box-shadow:0 5px 0 #e4def2}.panel h2{margin:5px 0 12px;font-size:clamp(23px,3vw,32px)}
+li{margin:9px 0}.notice{padding:13px 16px;background:#fff5d9;border-left:5px solid #e9b846;border-radius:9px;margin:15px 0}
+.good{padding:13px 16px;background:#e6fbf0;border-left:5px solid #62bd9a;border-radius:9px;margin:15px 0}
+.links a,.action{display:inline-block;background:#ece7ff;color:#32217a;border:1px solid #b3a9e6;border-radius:30px;padding:10px 15px;margin:6px 8px 6px 0;font-weight:800;text-decoration:none}
+.bookexample{position:relative;max-width:730px;border:1px solid #c6c6c6;border-radius:4px;padding:18px 20px 32px 83px;background:#fffefb repeating-linear-gradient(to bottom,transparent 0,transparent 35px,#8fb6df 35px,#8fb6df 36px);font:19px/36px 'Comic Sans MS','Segoe Print',Georgia,serif}
+.bookexample:before{content:'';position:absolute;top:0;bottom:0;left:63px;width:2px;background:#d84a58}.bookexample p{margin:0;min-height:36px;position:relative;top:4px}.bookexample .empty{height:36px}.bookexample u{text-decoration-color:#d84a58;text-underline-offset:4px}
+.imagegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}.imagegrid figure{margin:0;background:#f6f2ff;border:2px solid #ded3fb;border-radius:13px;padding:9px}.imagegrid img{width:100%;display:block;border-radius:8px}.imagegrid figcaption{font-weight:750;font-size:14px;margin-top:8px}
+.words{columns:2;max-width:760px}.wordbox{background:#f5f1ff;border-radius:12px;padding:13px 20px}.muted{color:#5d6480}.pill{display:inline-block;background:#fff0d9;padding:4px 11px;border-radius:25px;font-weight:800}
+.footer{text-align:center;color:#6d7181;padding:25px}
+@media(max-width:560px){.panel{padding:16px}.bookexample{padding-left:51px;font-size:15px}.bookexample:before{left:38px}.words{columns:1}}
+ .embedded-reader{padding:18px;background:#f5f1ff;border-radius:15px;margin:16px 0} .embedded-reader a{font-weight:800;color:#4931a3}.story-text{font-size:1.17rem;line-height:1.95;background:#fff;padding:25px;border-radius:12px;white-space:pre-wrap}.page-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px}.page-gallery figure{margin:0;background:#fff;padding:8px;border-radius:10px}.page-gallery img{display:block;width:100%;height:auto}.page-gallery figcaption{text-align:center}.audio-panel{background:#e4faef;border-radius:12px;padding:14px;margin:14px 0}.audio-panel audio{width:100%;margin-top:8px}.fulltext-button{background:#314ec2;color:white;border:0}.large-text-modal[hidden]{display:none}.large-text-modal{position:fixed;inset:0;z-index:9999;background:#f6f5f1;overflow:auto;padding:0 14px 40px}.reader-toolbar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;background:#1b2348;color:#fff;padding:12px}.reader-toolbar button{background:#ffbd83;color:#1b2348}.large-pages{max-width:1200px;margin:auto}.large-pages figure{margin:20px 0;padding:8px;background:white}.large-pages img{display:block;width:100%;height:auto}.large-pages figcaption{text-align:center} .story-pdf-frame{width:100%;height:min(80vh,820px);min-height:490px;border:3px solid #c8baf4;border-radius:14px;overflow:hidden;background:#fff}.story-pdf-frame iframe{width:100%;height:100%;border:0;display:block}details{padding:10px;background:#f2edff;border-radius:10px;margin:10px 0}details summary{cursor:pointer;font-weight:800} .story-pages{display:grid;gap:14px;margin:16px 0}.story-pages figure{margin:0;padding:10px;background:white;border:2px solid #ded5f5;border-radius:14px}.story-pages img{display:block;width:100%;height:auto}.story-pages figcaption{text-align:center;color:#62547d;font-size:13px;padding-top:6px}.reader-open{margin:12px 0;padding:12px 18px;background:#6c43ab;color:white;border:0;border-radius:12px;font-weight:700;cursor:pointer}.experts-tab{background:#fff1bd!important;border:2px solid #c18a27!important;color:#382455!important}.experts-tab[aria-pressed="true"]{background:#ffe09a!important;box-shadow:0 0 0 3px #c18a2760}.story-covers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:22px 0}.story-cover{background:#fff;color:#202a51;border-radius:14px;overflow:hidden;box-shadow:0 5px 15px #10152a45}.story-cover img{width:100%;height:145px;object-fit:cover;object-position:center top;display:block}.story-cover .cover-label{padding:8px;font-weight:800;font-size:13px;line-height:1.3}.story-cover .cover-group{display:block;color:#6847a7;font-size:12px;margin-bottom:3px}@media(max-width:620px){.story-covers{grid-template-columns:repeat(2,minmax(0,1fr))}.story-cover img{height:115px}}.timetable-notice{margin:12px 0 18px;padding:15px 18px;background:#e5fff3;color:#1c4050;border-left:5px solid #34a58a;border-radius:12px;font-size:1.04rem}.sessionnav button{min-width:160px}.sessionnav button small{line-height:1.3}.review-poster{display:block;width:100%;max-width:1000px;height:auto;border-radius:16px;margin:18px auto;border:2px solid #c9dcf5}.reader-open{display:inline-block;text-decoration:none}.student-roster{margin:14px 0 22px;padding:15px 17px;border:2px solid #d8d0ef;border-radius:16px;background:#f8f5ff;color:#242b52}.student-roster-title{font-weight:850;margin-bottom:10px}.student-subgroups{display:flex;gap:12px;flex-wrap:wrap}.student-subgroup{flex:1 1 225px}.student-subgroup b{display:block;margin:0 0 7px;color:#66409d}.student-chips{display:flex;gap:7px;flex-wrap:wrap}.student-chips span{padding:5px 10px;border-radius:999px;background:white;border:1px solid #cfc3e8;font-weight:600;font-size:.9rem}
+.tumble-panel{margin-bottom:20px}.tumble-scroll{overflow-x:auto;padding-bottom:6px}
+.tumble-grid{display:grid;grid-template-columns:minmax(135px,1.15fr) repeat(4,minmax(160px,1fr));gap:7px;min-width:780px}
+.tumble-head{padding:13px 9px;text-align:center;border-radius:13px;color:#25204d;font-weight:900;box-shadow:0 3px 0 #211a3a1a}
+.tumble-head.time{background:#d8d1f6}.tumble-head.g0{background:#c9f1dc}.tumble-head.g1{background:#ffe0c3}.tumble-head.g2{background:#d7e7ff}.tumble-head.g3{background:#f1d8fa}
+.tumble-day{padding:12px 9px;background:#32275e;color:white;border-radius:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-weight:850;line-height:1.4}
+.tumble-cell{border:2px solid transparent;border-radius:13px;padding:11px 9px;text-align:left;cursor:pointer;min-height:83px;font:inherit;color:#27244b;display:flex;flex-direction:column;gap:5px;align-items:flex-start;justify-content:center;transition:transform .15s,border-color .15s}
+.tumble-cell:hover{transform:translateY(-2px);border-color:#7250ba}.tumble-cell:focus-visible{outline:3px solid #6040ae;outline-offset:2px}
+.tumble-cell.g0{background:#e5f8ec}.tumble-cell.g1{background:#fff0e0}.tumble-cell.g2{background:#eaf2ff}.tumble-cell.g3{background:#f8eafb}
+.tumble-cell.selected{border-color:#6947ae;box-shadow:0 0 0 2px #6947ae35}
+.tumble-cell .activity-icon{font-size:24px;line-height:1}.tumble-cell .activity-name{font-weight:800;font-size:13px;line-height:1.3}
+.tumble-note{margin-top:11px;font-size:13px;color:#5e567d}
+
+.hero-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+.hero-title{flex:0 0 auto;min-width:0}
+.tumble-quick{flex:1 1 680px;max-width:850px;min-width:0;background:#ffffffee;border:3px solid #b9e9e1;border-radius:19px;padding:13px 14px;color:#25234c;box-shadow:0 8px 24px #16153e36}
+.tumble-quick-title{font-size:15px;font-weight:950;letter-spacing:.025em}
+.tumble-quick p{font-size:12px;color:#625b78;margin:3px 0 10px}
+.tumble-quick .tumble-scroll{overflow-x:auto}
+.quick-grid{display:grid;grid-template-columns:minmax(122px,1.25fr) repeat(5,minmax(100px,1fr));gap:5px;min-width:720px}
+.quick-heading{background:#393066;color:white;text-align:center;border-radius:8px;padding:7px 4px;font-size:12px;font-weight:900}
+.quick-group{border-radius:9px;padding:9px 7px;display:flex;align-items:center;font-weight:900;font-size:12px;line-height:1.2}
+.quick-activity{font:inherit;font-size:11px;font-weight:800;line-height:1.25;color:#26224a;border:2px solid transparent;border-radius:9px;padding:7px 5px;min-height:52px;text-align:center;cursor:pointer;overflow-wrap:anywhere}
+.quick-activity:hover,.quick-activity:focus-visible{border-color:#6745ac;outline:none}
+.quick-activity.selected{border-color:#6745ac;box-shadow:inset 0 0 0 1px #6745ac}
+.quick-group.g0,.quick-activity.g0{background:#dff6e9}.quick-group.g1,.quick-activity.g1{background:#ffe8d3}
+.quick-group.g2,.quick-activity.g2{background:#e1edff}.quick-group.g3,.quick-activity.g3{background:#f3e1fa}
+@media(max-width:1050px){.hero-heading{flex-direction:column}.tumble-quick{width:100%;max-width:none;flex:auto}.hero-title{flex:auto}}
+
+/* Week 5 graffiti refresh: visual changes only; learning content remains intact */
+:root{--navy:#083b57;--purple:#007ca8;--mint:#a4f6c3;--peach:#8bdcf1;--paper:#effbf8;--ink:#10354c}
+body{background:radial-gradient(circle at 9% 14%,#b3f3e85c 0 10%,transparent 11%),radial-gradient(circle at 92% 40%,#80d5fc48 0 11%,transparent 12%),linear-gradient(145deg,#ecfff6,#e8f7ff 62%,#effff4);color:var(--ink)}
+.wrap{max-width:1540px;width:100%;padding-left:clamp(12px,2.5vw,36px);padding-right:clamp(12px,2.5vw,36px)}
+header{position:relative;overflow:hidden;background:radial-gradient(circle at 95% 20%,#29a9d7 0 2px,transparent 3px) 0 0/25px 25px,linear-gradient(118deg,#06324d 0%,#075e82 48%,#088b79 100%);border-bottom:10px solid #60f0b1}
+header:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.24;background:repeating-linear-gradient(154deg,transparent 0 40px,#71ffbf 41px 44px,transparent 45px 90px)}
+header .wrap{position:relative}
+header h1{font-weight:1000;letter-spacing:-.055em;text-shadow:4px 5px 0 #002a47,-2px -2px 0 #37e7bc;transform:rotate(-1.5deg)}
+header h1 span{color:#b7ff57;text-shadow:4px 5px 0 #01304a}
+.hero-heading{display:flex;flex-direction:column;gap:20px;align-items:stretch}
+.hero-title{width:100%}
+.tumble-quick{width:100%;max-width:none;flex:auto;min-width:0;border:4px solid #64f5b6;background:#f6fffd;box-shadow:8px 9px 0 #022e49;border-radius:20px;padding:16px 18px}
+.tumble-quick-title{font-size:clamp(17px,2vw,25px);color:#035578;letter-spacing:.035em;text-transform:uppercase;text-shadow:1px 2px 0 #a1f5c7}
+.tumble-quick p{color:#336c7b}
+.tumble-quick .tumble-scroll{overflow:visible;width:100%}
+.quick-grid{width:100%;min-width:0;grid-template-columns:minmax(110px,1.05fr) repeat(5,minmax(0,1fr));gap:clamp(3px,.55vw,9px)}
+.quick-heading{background:#075e87;color:white;border-radius:9px;font-size:clamp(11px,1.2vw,15px);padding:10px 4px}
+.quick-group{font-size:clamp(11px,1.1vw,15px);padding:10px 7px;border:1px solid #3b9b9e}
+.quick-activity{font-size:clamp(10px,1vw,14px);padding:10px 5px;min-height:62px;overflow-wrap:anywhere;border:2px solid #ffffff}
+.quick-activity:hover,.quick-activity:focus-visible{border-color:#028db3;transform:translateY(-2px)}
+.quick-activity.selected{border-color:#006b92;box-shadow:inset 0 0 0 1px #006b92}
+.quick-group.g0,.quick-activity.g0{background:#bdf5d3}
+.quick-group.g1,.quick-activity.g1{background:#bde9fc}
+.quick-group.g2,.quick-activity.g2{background:#c9f8ec}
+.quick-group.g3,.quick-activity.g3{background:#b8ddf6}
+.panel,.card{border-color:#9edcd7}
+button[aria-pressed="true"]{box-shadow:0 0 0 2px #16ba9b}
+@media(max-width:700px){
+ .tumble-quick{padding:10px 7px}
+ .quick-grid{grid-template-columns:minmax(69px,.85fr) repeat(5,minmax(0,1fr));gap:2px}
+ .quick-heading{font-size:10px;padding:6px 1px}
+ .quick-group{font-size:10px;padding:5px 2px}
+ .quick-activity{font-size:9px;line-height:1.15;padding:5px 1px;min-height:75px}
+ header h1{font-size:clamp(42px,12vw,70px)}
+}
+
+/* Ocean blue refresh — presentation only, no changes to lesson content. */
+:root{--navy:#092b49;--purple:#116caa;--mint:#b8e9f7;--peach:#8bd0ef;--paper:#eef8fc;--ink:#143954}
+body{background:linear-gradient(180deg,#e8f7fc 0%,#f6fcff 47%,#eaf5fb 100%);color:var(--ink)}
+header{background:linear-gradient(120deg,#06243f 0%,#07527f 42%,#1288ad 75%,#5ebbd6 100%);border-bottom:9px solid #a1ddec}
+header:before{content:none!important;background:none!important;display:none!important}
+header h1{color:#f4fcff;text-shadow:3px 4px 0 #06334f,-1px -1px 0 #8bc9e8}
+header h1 span{color:#bceeff;text-shadow:3px 4px 0 #073b5b}
+.eyebrow{color:#b7e8fb}.tag{color:#0b70a3}
+.tumble-quick{background:#f8fdff;border:3px solid #91d0e8;box-shadow:7px 8px 0 #063a5c;border-radius:18px}
+.tumble-quick-title{color:#0b507d;text-shadow:none}
+.tumble-quick p{color:#426d85}
+.quick-heading{background:linear-gradient(160deg,#0b4a76,#117ea6);color:#fff}
+.quick-group.g0,.quick-activity.g0{background:#d7f2fc}
+.quick-group.g1,.quick-activity.g1{background:#bfe4f5}
+.quick-group.g2,.quick-activity.g2{background:#e2f5ff}
+.quick-group.g3,.quick-activity.g3{background:#b9d8ee}
+.quick-group{border-color:#85b7d4}
+.quick-activity:hover,.quick-activity:focus-visible{border-color:#087eae}
+.quick-activity.selected{border-color:#075a91;box-shadow:inset 0 0 0 1px #075a91}
+.panel,.card{border-color:#c5e2ef;box-shadow:0 5px 0 #d5e9f2}
+button{border-color:#3785b3}button[aria-pressed=true]{background:#0e6eaa;border-color:#0e6eaa;color:white;box-shadow:0 0 0 2px #9bdaf1}
+header button[aria-pressed=true]{background:#b4e5f6;color:#07395d;border-color:#b4e5f6}
+.badge,.roomlink{background:#c6ecf9;color:#0a3c61}
+.links a,.action{background:#e2f4fc;color:#0a4d80;border-color:#a5d5ec}
+.good{background:#e7f7fc;border-left-color:#56aed0}
+.notice{background:#edf7fd;border-left-color:#2d89bc}
+.student-roster{background:#f0f9fe;border-color:#b4d9ee;color:#143954}
+.student-subgroup b{color:#0b679b}.student-chips span{border-color:#b8d9eb}
+.timetable-notice{background:#e3f4fb;color:#124667;border-left-color:#368db9}
+
+/* Forest redesign: preserve the full lesson content and interactions. */
+:root{--navy:#173e2b;--purple:#36754e;--mint:#cbe8b5;--peach:#e5e8a5;--paper:#f1f7ee;--ink:#203c2c}
+html{background:#eaf3e6}
+body{font-family:'Patrick Hand','Comic Sans MS',cursive!important;font-size:20px;line-height:1.45;color:#203c2c;background:linear-gradient(180deg,#e7f2e3 0%,#f7faf3 48%,#e7f1e1 100%)!important}
+body *,button,input,select,textarea{font-family:'Patrick Hand','Comic Sans MS',cursive!important}
+header{background:linear-gradient(125deg,#143c2c 0%,#235d43 48%,#41794e 100%)!important;border-bottom:9px solid #a4c785!important;position:relative;overflow:hidden}
+header:before{content:none!important;display:none!important}
+header h1{color:#fff9dc!important;text-shadow:3px 4px 0 #0d3327!important;transform:none!important;letter-spacing:.015em!important;font-size:clamp(48px,7vw,86px)}
+header h1 span{color:#cce5a2!important;text-shadow:3px 4px 0 #0d3327!important}
+.eyebrow{color:#d8eac0!important}.tag{color:#2d7952!important}
+.wrap{max-width:1540px;width:100%}
+.tumble-quick{background:#f9fcf4!important;border:3px solid #a1c18c!important;box-shadow:7px 8px 0 #183e2a40!important;border-radius:19px;color:#24452e!important}
+.tumble-quick-title{color:#275d3d!important;text-shadow:none!important;font-size:clamp(19px,2vw,27px)!important}
+.tumble-quick p{color:#47684f!important}
+.quick-heading{background:#285d40!important;color:#fff!important}
+.quick-group.g0,.quick-activity.g0{background:#e3f1cc!important}
+.quick-group.g1,.quick-activity.g1{background:#d5e9d6!important}
+.quick-group.g2,.quick-activity.g2{background:#d5e7c1!important}
+.quick-group.g3,.quick-activity.g3{background:#e8edd0!important}
+.quick-group{border-color:#a1be93!important;color:#24452e!important}
+.quick-activity{color:#24452e!important;border-color:#f6fbf3!important}
+.quick-activity:hover,.quick-activity:focus-visible,.quick-activity.selected{border-color:#367c4f!important;box-shadow:inset 0 0 0 1px #367c4f!important}
+.panel{background:#fffefa!important;border:1px solid #c4d9b9!important;box-shadow:0 5px 0 #d6e6cc!important}
+button{border-color:#54865b!important;color:#25472f}
+button[aria-pressed=true],button[aria-pressed="true"]{background:#346c48!important;border-color:#346c48!important;color:white!important}
+header button[aria-pressed=true],header button[aria-pressed="true"]{background:#cbe8b5!important;color:#163f2a!important;border-color:#cbe8b5!important}
+button:focus-visible,a:focus-visible{outline:3px solid #a6c66b!important}
+.badge,.roomlink{background:#cbe8b5!important;color:#204a32!important}
+.links a,.action{background:#e5f1dc!important;color:#245637!important;border-color:#b0ce9c!important}
+.good{background:#e6f4df!important;border-left-color:#6a9c68!important}
+.notice{background:#f7f2d9!important;border-left-color:#b6a46b!important}
+.wordbox,.embedded-reader,.imagegrid figure{background:#f2f8ed!important;border-color:#c6d9b7!important}
+.pill{background:#e8efce!important}.muted,.footer{color:#53745a!important}
+.student-roster{background:#f4f9ed!important;border-color:#c4d8ad!important;color:#284831!important}
+.student-subgroup b{color:#316c47!important}.student-chips span{border-color:#bdd2b1!important;background:#fffefa!important}
+.timetable-notice{background:#e5f3dc!important;color:#25492e!important;border-left-color:#6b9b59!important}
+.tumble-quick .tumble-scroll{overflow:visible!important}
+.quick-grid{width:100%!important;min-width:0!important}
+@media(max-width:700px){.quick-activity{font-size:clamp(10px,1.7vw,13px)!important}.quick-group{font-size:clamp(11px,1.8vw,14px)!important}}
+
+/* Forest header: centred rust lettering, one portrait and one emblem */
+.hero-title{display:grid!important;grid-template-columns:clamp(85px,13vw,170px) minmax(0,1fr) clamp(85px,13vw,170px);align-items:center;gap:clamp(10px,2vw,30px);width:100%;max-width:1250px;margin:0 auto 8px;flex:initial!important}
+.hero-words{text-align:center;min-width:0}
+.hero-words h1{color:#e87830!important;font-size:clamp(46px,7.1vw,110px)!important;line-height:.95!important;letter-spacing:.012em!important;font-weight:1000!important;text-shadow:2px 3px 0 #6e321a,0 0 16px #fff0bf80!important;transform:none!important;margin:10px 0 12px!important}
+.hero-words h1 span{color:#f18a3c!important;text-shadow:2px 3px 0 #6e321a!important}
+.hero-words .eyebrow{color:#f8e3b7!important;font-size:clamp(13px,1.5vw,20px);letter-spacing:.06em}
+.hero-room{width:100%;aspect-ratio:1;object-fit:cover;object-position:center center;border-radius:18px;border:5px solid #f2d9a5;box-shadow:0 5px 0 #24452c,0 10px 24px #10261988}
+.hero-emblem{width:100%;max-height:180px;object-fit:contain;background:#fffdf4;border-radius:20px;padding:10px;box-shadow:0 5px 0 #24452c,0 10px 24px #10261988}
+@media(max-width:600px){.hero-title{grid-template-columns:72px minmax(0,1fr) 72px;gap:6px}.hero-words h1{font-size:clamp(31px,7vw,48px)!important;text-shadow:1px 2px 0 #6e321a!important}.hero-words .eyebrow{font-size:10px}.hero-room{border-width:3px}.hero-emblem{padding:4px;border-radius:10px}}
+
+/* Larger, playful angled header pictures, pulled in close to the title */
+.hero-title{grid-template-columns:clamp(125px,18vw,245px) minmax(0,1fr) clamp(125px,18vw,245px)!important;gap:clamp(2px,.6vw,9px)!important;max-width:1460px!important}
+.hero-room{transform:rotate(-8deg) scale(1.04);transform-origin:55% 50%;border:6px solid #f8dcaa;box-shadow:8px 12px 0 #21442c,0 15px 28px #071c1680;position:relative;z-index:1}
+.hero-emblem{transform:rotate(9deg) scale(1.08);transform-origin:45% 50%;max-height:255px!important;padding:9px!important;box-shadow:-8px 12px 0 #21442c,0 15px 28px #071c1680;position:relative;z-index:1}
+.hero-words{position:relative;z-index:2}
+@media(max-width:650px){.hero-title{grid-template-columns:clamp(65px,19vw,120px) minmax(0,1fr) clamp(65px,19vw,120px)!important;gap:2px!important}.hero-room{border-width:3px;transform:rotate(-7deg) scale(1.02)}.hero-emblem{padding:3px!important;transform:rotate(8deg) scale(1.04)}.hero-words h1{font-size:clamp(29px,7.4vw,51px)!important}}
+
+/* Pull both angled header images tightly against the orange title. */
+.hero-title{max-width:1040px!important;grid-template-columns:clamp(135px,17vw,215px) minmax(0,1fr) clamp(135px,17vw,215px)!important;gap:0!important;justify-content:center!important}
+.hero-room{transform:translateX(26px) rotate(-8deg) scale(1.06)!important;transform-origin:right center!important}
+.hero-emblem{transform:translateX(-26px) rotate(9deg) scale(1.1)!important;transform-origin:left center!important}
+.hero-words h1{font-size:clamp(48px,6.3vw,86px)!important}
+@media(max-width:650px){.hero-title{grid-template-columns:clamp(70px,19vw,120px) minmax(0,1fr) clamp(70px,19vw,120px)!important;gap:0!important}.hero-room{transform:translateX(10px) rotate(-7deg) scale(1.04)!important}.hero-emblem{transform:translateX(-10px) rotate(8deg) scale(1.06)!important}.hero-words h1{font-size:clamp(29px,7.4vw,51px)!important}}
+
+/* Larger tilted header pictures and smooth fading blue background */
+html{background:#eaf7ff!important}
+body{background:linear-gradient(180deg,#b5dcf4 0%,#d8edfa 34%,#edf8ff 70%,#f9fcff 100%) fixed!important}
+header{background:linear-gradient(125deg,#083b67 0%,#126c9b 48%,#68b7d9 100%)!important;border-bottom-color:#86cce8!important}
+header:before{background:none!important;opacity:0!important}
+.hero-title{max-width:1190px!important;grid-template-columns:clamp(180px,21vw,275px) minmax(0,1fr) clamp(180px,21vw,275px)!important;gap:0!important}
+.hero-room{transform:translateX(32px) rotate(-9deg) scale(1.15)!important;box-shadow:8px 12px 0 #164b70,0 15px 28px #061c3380!important}
+.hero-emblem{transform:translateX(-32px) rotate(9deg) scale(1.18)!important;max-height:310px!important;box-shadow:-8px 12px 0 #164b70,0 15px 28px #061c3380!important}
+.hero-words{z-index:3!important}
+@media(max-width:700px){
+ .hero-title{grid-template-columns:clamp(75px,20vw,145px) minmax(0,1fr) clamp(75px,20vw,145px)!important}
+ .hero-room{transform:translateX(10px) rotate(-8deg) scale(1.12)!important}
+ .hero-emblem{transform:translateX(-10px) rotate(8deg) scale(1.13)!important}
+ .hero-words h1{font-size:clamp(29px,7.4vw,51px)!important}
+}
+
+/* Header refinement: images 30% smaller, title 40% larger, images closer to words. */
+.hero-title{
+  max-width:1250px!important;
+  grid-template-columns:clamp(105px,14.7vw,193px) minmax(0,1fr) clamp(105px,14.7vw,193px)!important;
+  column-gap:0!important;
+  align-items:center!important;
+}
+.hero-room{
+  transform:translateX(38px) rotate(-9deg) scale(.805)!important;
+  transform-origin:right center!important;
+}
+.hero-emblem{
+  transform:translateX(-38px) rotate(9deg) scale(.826)!important;
+  transform-origin:left center!important;
+  max-height:260px!important;
+}
+.hero-words h1{
+  font-size:clamp(67px,8.82vw,121px)!important;
+  line-height:.94!important;
+}
+@media(max-width:700px){
+  .hero-title{grid-template-columns:clamp(51px,14vw,102px) minmax(0,1fr) clamp(51px,14vw,102px)!important;gap:0!important}
+  .hero-room{transform:translateX(12px) rotate(-8deg) scale(.784)!important}
+  .hero-emblem{transform:translateX(-12px) rotate(8deg) scale(.791)!important}
+  .hero-words h1{font-size:clamp(39px,10.36vw,72px)!important}
+}
+
+/* Final header: no Room 13 photo; large left-aligned lettering and nearby emblem */
+.hero-title{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:clamp(4px,1vw,16px)!important;max-width:none!important;width:100%!important;margin:0!important;padding:8px 0!important}
+.hero-words{flex:0 1 auto!important;text-align:left!important;min-width:0!important}
+.hero-words h1{font-size:clamp(67px,8.82vw,121px)!important;line-height:.94!important;text-align:left!important;margin:0!important}
+.hero-emblem{position:relative!important;flex:0 0 auto!important;width:clamp(95px,14vw,190px)!important;max-width:clamp(95px,14vw,190px)!important;max-height:210px!important;object-fit:contain!important;transform:rotate(9deg)!important;transform-origin:center center!important;margin:0!important;box-shadow:none!important}
+@media(max-width:700px){.hero-title{gap:3px!important}.hero-words h1{font-size:clamp(37px,10vw,72px)!important}.hero-emblem{width:clamp(65px,17vw,110px)!important;max-width:clamp(65px,17vw,110px)!important;max-height:125px!important}}
+
+/* One-line heading with school emblem, November revision */
+header .hero-heading{display:flex!important;flex-direction:column!important;align-items:stretch!important}
+header .hero-title{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:clamp(8px,1.7vw,28px)!important;width:100%!important;max-width:100%!important}
+header .hero-words{flex:0 1 auto!important;min-width:0!important}
+header .hero-words h1{font-size:clamp(28px,6.2vw,104px)!important;line-height:1.03!important;white-space:nowrap!important;letter-spacing:-.045em!important;margin:0!important}
+header .hero-emblem{flex:0 0 auto!important;width:clamp(54px,9vw,145px)!important;max-width:clamp(54px,9vw,145px)!important;max-height:155px!important;height:auto!important;object-fit:contain!important;margin:0!important}
+@media(max-width:700px){header .hero-title{gap:5px!important}header .hero-words h1{font-size:clamp(21px,6vw,46px)!important}header .hero-emblem{width:clamp(40px,10vw,72px)!important;max-width:clamp(40px,10vw,72px)!important}}
+
+/* Centre the one-line FIND IT. WRITE IT. heading and its adjacent school emblem. */
+header .hero-title{justify-content:center!important;gap:clamp(8px,1.4vw,22px)!important;margin-inline:auto!important}
+header .hero-words{text-align:center!important}
+header .hero-words h1{text-align:center!important;white-space:nowrap!important}
+/* Unified ocean-blue palette — styling only, all teaching content preserved. */
+:root{--navy:#082b50!important;--purple:#1264a3!important;--mint:#c6e7ff!important;--peach:#8ac9f2!important;--paper:#eef7ff!important;--ink:#123a60!important}
+html{background:#e8f4ff!important}
+body{color:#123a60!important;background:linear-gradient(180deg,#a6d4f6 0%,#d1eaff 34%,#eaf6ff 70%,#f7fbff 100%) fixed!important}
+header{background:linear-gradient(115deg,#072f60 0%,#155eaa 52%,#4fa8e4 100%)!important;border-bottom:9px solid #84c8fa!important}
+header:before{display:none!important}
+header .hero-words h1,header .hero-words h1 span{color:#c5edff!important;text-shadow:2px 3px 0 #063d75,0 0 14px #62bbf999!important}
+header .hero-words .eyebrow{color:#e1f4ff!important}
+header .hero-emblem{background:#f6fbff!important;box-shadow:0 4px 0 #0b477c,0 8px 20px #0b376b66!important}
+.tumble-quick{background:#f0f9ff!important;border:4px solid #55a9e5!important;box-shadow:7px 8px 0 #0c4a80!important;color:#123a60!important}
+.tumble-quick-title{color:#07508f!important;text-shadow:none!important}
+.tumble-quick p{color:#426e95!important}
+.quick-heading{background:#0a548f!important;color:#fff!important}
+.quick-group.g0,.quick-activity.g0{background:#d8f0ff!important}
+.quick-group.g1,.quick-activity.g1{background:#c0e3fc!important}
+.quick-group.g2,.quick-activity.g2{background:#a8d3f4!important}
+.quick-group.g3,.quick-activity.g3{background:#e3efff!important}
+.quick-group{border-color:#75afe0!important;color:#123e70!important}
+.quick-activity{color:#153c69!important;border-color:#f5fbff!important}
+.quick-activity:hover,.quick-activity:focus-visible,.quick-activity.selected{border-color:#0759a6!important;box-shadow:inset 0 0 0 1px #0759a6!important}
+.panel{background:#fbfdff!important;border:2px solid #a3ccef!important;box-shadow:0 5px 0 #c2e0f8!important;color:#123a60!important}
+.panel h2,.panel h3,.tag{color:#105b9b!important}
+button{border-color:#4189c5!important;color:#174572!important;background:#f7fbff!important}
+button[aria-pressed=true],button[aria-pressed="true"]{background:#166bb3!important;border-color:#166bb3!important;color:white!important;box-shadow:0 0 0 2px #a4d7ff!important}
+header button[aria-pressed=true],header button[aria-pressed="true"]{background:#bfe6ff!important;border-color:#bfe6ff!important;color:#093e71!important}
+button:focus-visible,a:focus-visible{outline:3px solid #3e9fe8!important}
+.badge,.roomlink{background:#bce4ff!important;color:#0a477e!important}
+.links a,.action{background:#d8eeff!important;color:#0d508f!important;border-color:#8dc3ec!important}
+.notice{background:#e3f3ff!important;border-left-color:#4c9ed6!important;color:#164a78!important}
+.good{background:#d4ebff!important;border-left-color:#277ebf!important;color:#164a78!important}
+.wordbox,.embedded-reader,.imagegrid figure{background:#eaf5ff!important;border-color:#b6d8f3!important}
+.pill{background:#cfe9ff!important;color:#154c7d!important}
+.muted,.footer{color:#50769a!important}
+.student-roster{background:#eaf5ff!important;border-color:#a4caec!important;color:#1b4b77!important}
+.student-subgroup b{color:#0c5799!important}
+.student-chips span{background:#f9fcff!important;border-color:#a9cee9!important;color:#174773!important}
+.timetable-notice{background:#d9edff!important;border-left-color:#267cbf!important;color:#154e81!important}
+.audio-panel{background:#d9efff!important;color:#184b78!important}
+.story-text{background:#fbfdff!important;color:#153b63!important}
+.story-pages figure,.page-gallery figure{background:#f7fbff!important;border-color:#a8d1f0!important}
+.story-pages figcaption,.page-gallery figcaption{color:#46749d!important}
+.story-pdf-frame{border-color:#88bce5!important}
+.reader-open,.fulltext-button{background:#176cb0!important;color:white!important}
+.reader-toolbar{background:#0b457d!important;color:white!important}
+.reader-toolbar button{background:#c2e5ff!important;color:#0c467b!important}
+.large-text-modal{background:#e9f5ff!important}
+details{background:#e5f2ff!important;color:#154b7a!important}
+.experts-tab{background:#c6e6ff!important;border:2px solid #519bce!important;color:#104f85!important}
+.experts-tab[aria-pressed="true"]{background:#166bb3!important;color:white!important;box-shadow:0 0 0 3px #8bc9f8!important}
+.story-cover{background:#f6fbff!important;color:#184d7c!important}
+.story-cover .cover-group{color:#226ba5!important}
+.imagegrid figcaption{color:#174d7c!important}
+
+/* Matching emblems framing the centred one-line heading */
+header .hero-title{display:flex!important;align-items:center!important;justify-content:center!important;gap:clamp(8px,1.5vw,24px)!important;width:100%!important}
+header .hero-title .hero-emblem{width:clamp(58px,10vw,130px)!important;max-width:clamp(58px,10vw,130px)!important;height:clamp(58px,10vw,130px)!important;object-fit:contain!important;flex:0 0 auto!important}
+header .hero-title .hero-emblem-tawa{transform:rotate(-7deg)!important;border-radius:12px;background:white;box-shadow:0 5px 12px #002c4c55}
+header .hero-title .hero-words{min-width:0!important;text-align:center!important}
+header .hero-title h1{white-space:nowrap!important}
+@media(max-width:650px){header .hero-title{gap:5px!important}header .hero-title .hero-emblem{width:clamp(36px,9vw,58px)!important;height:clamp(36px,9vw,58px)!important}header .hero-title h1{font-size:clamp(18px,5.1vw,32px)!important}}
+</style></head><body><header><div class="wrap"><div class="hero-heading"><div class="hero-title"><img class="hero-emblem hero-emblem-tawa" alt="TAWA school emblem" src="assets/jpg_01_fbb85a2c7d9d.jpg"><div class="hero-words"><div class="eyebrow">Whaea Allie · Term 4 / Week 5</div><h1>FIND IT. <span>WRITE IT.</span></h1></div><img class="hero-emblem" src="assets/png_01_95cfccb2075a.png" alt="School emblem"></div><aside class="tumble-quick" aria-label="Reading groups at a glance"><div class="tumble-quick-title">📚 READING TUMBLE · WEEK 5</div><p>Sessions across the top · groups down the side</p><div id="tumbleOverview" class="tumble-scroll"></div></aside></div><div class="badge">WEEK 05 · READING LAB</div><p>Choose your classroom, reading group and timetabled day/period. Work independently and present your work neatly.</p><nav id="rooms"></nav><a id="classroom" class="roomlink" target="_blank" rel="noopener noreferrer">Open Google Classroom ↗</a></div></header><main class="wrap"><section class="panel"><div class="tag">Step 1 · Pick your reading group</div><nav class="groupnav" id="groups"></nav><div id="studentRoster" class="student-roster" aria-live="polite"></div><div class="tag">Step 2 · Pick your timetabled day and period</div><nav class="sessionnav" id="sessions"></nav></section><div id="work"></div><footer class="footer">Term 4 · Week 5 · R13 / R62 / R81</footer></main><script>
+const classes={R13:'https://classroom.google.com/c/ODQ2MjQ5MjMxMjU5',R62:'https://classroom.google.com/c/ODI2MDE2MTg3MzEw',R81:'https://classroom.google.com/c/ODI2MDMwMzE3Nzg2'};
+const groups=['Tawa','Southside','Shooting Stars','Kings & Queens'];
+const studentGroups={"R13":[[["Tawa","Leonard","Passion","Krishav","Te Aorere"]],[["Southside","Peta","Seften","Minh","Skylar","Imman","Curosoe","Kaydon"]],[["Shooting Stars 1","Epeli","Tina","Joe","Anhmai","Shayla","JR"],["Shooting Stars 2","Sefiuglory","Evander","Lucien","Tony","Han"]],[["Kings & Queens","Maryam","Vivian","Nabeel","Sala"]]],"R62":[[["Tawa 1","David","Dallas","Josh","Dupree","Elijah Mu","Islay"],["Tawa 2","Sarah","Tamilee","Talha","Leon","James","Malala"]],[["Southside","Adelaide","Marsden","Chin","Fea","Wiremu"]],[["Shooting Stars","Katelyn","Nina","Zion","Nikau","Noah"]],[["Kings & Queens","Lilly","Charlee","Nickal","Pekanisha","Aby","Elijay Ma"]]],"R81":[[["Tawa","Jarvis","Alofa","Kristoff","Ardmore","Tyson"]],[["Southside","Blaze","Naiara","Tiahna","Katana","Isabelle","Brittany","Keira"]],[["Shooting Stars","Ngamana","Peyton","Larenzo","Zephyr","Pa","Te Tauiri","Nikayla"]],[["Kings & Queens 1","Tnsei","Torian","Jamie Lake","Choren"],["Kings & Queens 2","Cid","Jesstelle","Kahurangi","Kayanna"]]]};
+
+const sessions=['Independent reading & comprehension','Group rotation','Acrostic poetry','Group rotation','Group rotation'];
+const classTimetable={
+ R13:[['Monday',4],['Tuesday',1],['Wednesday',1],['Thursday',4],['Friday',3]],
+ R62:[['Tuesday',2],['Wednesday',3],['Wednesday',4],['Thursday',3],['Friday',4]],
+ R81:[['Monday',3],['Tuesday',3],['Tuesday',4],['Thursday',1],['Thursday',2]]
+};
+function timetableLabel(i){const t=classTimetable[room][i];return `${t[0]} · Period ${t[1]}`;}
+function conferenceTime(g){return timetableLabel([0,3,1,4][g]);}
+
+const stories=[{"title": "Hidden Talent", "source": "School Journal Level 2 · June 2022", "author": "Maria Samuela", "url": "https://instructionalseries.tki.org.nz/Instructional-Series/School-Journal/School-Journal-Level-2-June-2022", "words": ["umpteenth", "homestead", "disqualified", "compere", "programmes"], "questions": ["Why does Annie think she has no special talent?", "What jobs do Kana, Juanita and Jackson have for the talent quest?", "What causes the power to go out?", "How does Annie help solve two problems at the talent quest?", "What does Annie discover about her own talent at the end?"]}, {"title": "Sunday Hero", "source": "School Journal Level 3 · June 2022", "author": "Annaleese Jochems", "url": "https://instructionalseries.tki.org.nz/content/download/43150/481971/file/2022-SJ-L3%20JUNE-web.pdf", "words": ["celery", "shrugged", "rummaged", "muttering", "Clydesdales", "harvest", "landlord", "rhythm", "copper", "Netherlands"], "questions": ["Why does the narrator gently remind Oma about the green soup?", "What is Dad looking for, and why does he need it?", "Describe the tin that Oma asks the narrator to find.", "What do Oma and the narrator learn about the old keys?", "Who was Oma’s Sunday hero, and what did he believe about rest?", "How does the narrator’s attitude towards Oma change during the story?", "What might the title Sunday Hero mean in more than one way? Use evidence."]}, {"title": "Paper Tiger", "source": "School Journal Level 4 · June 2023", "author": "Rose Lu", "url": "https://instructionalseries.tki.org.nz/content/download/43653/487299/file/90958-SJL4%20June%202023_web.pdf", "words": ["decorative", "exhausting", "recognition", "Mandarin", "nostrils", "translucent", "ruefully", "jealous", "hawthorne", "translated"], "questions": ["Why has Claire travelled to China with her mum?", "What does Claire discover behind the couch? Describe it.", "Why does the paper tiger cause an argument between the sisters?", "How does Claire’s mum feel during the dinner conversation? Give evidence.", "Why did Wai Po hide the paper tiger?", "What do the sisters reveal about their childhood and their relationship?", "How does the ending change Claire’s understanding of family?"]}, {"title": "The Stunt Man and the Geologist", "source": "School Journal Level 4 · June 2023", "author": "Eamonn Marra", "url": "https://instructionalseries.tki.org.nz/content/download/43653/487299/file/90958-SJL4%20June%202023_web.pdf", "words": ["exaggerating", "martial", "geological", "distinct", "weathered", "irregularities", "magnifier", "quartz", "sluicing", "translucent"], "questions": ["What does Toby claim about his stunt training?", "How does Joseph behave around Toby at the start, and why?", "What does Elliot collect and study at the campground?", "How does Toby treat Elliot when they first meet?", "What do Joseph and Elliot do when they go sluicing?", "Describe the conflict on the trampoline and how Elliot surprises everyone.", "How does Joseph’s choice at the end show a change in his thinking?"]}];
+const handwriting=["assets/jpg_02_ca4a5545a676.jpg", "assets/jpg_03_76ee7a4a0e56.jpg", "assets/jpg_04_5200a12a29ca.jpg", "assets/jpg_05_78e5220b8223.jpg", "assets/jpg_06_e2a636c91ff4.jpg", "assets/jpg_07_50c5dbd832a2.jpg", "assets/jpg_08_5c58844c6fb9.jpg", "assets/jpg_09_d905ae9e89ca.jpg"];
+const helper={"2": "assets/jpg_10_2b3f823977ec.jpg", "3": "assets/jpg_11_3e5fc1454ca7.jpg", "7": "assets/jpg_12_7d747d74bc12.jpg", "8": "assets/jpg_13_15959b3ef744.jpg", "9": "assets/jpg_14_ed5fb80c1a12.jpg", "10": "assets/jpg_15_574df032f029.jpg", "11": "assets/jpg_16_aa62a1b5eff3.jpg", "12": "assets/jpg_17_111e63983f51.jpg"};
+const journalAssets={"1":{"pages":["assets/webp_01_ff0a390085ab.webp","assets/webp_02_d991442daf5a.webp","assets/webp_03_1bbbe8fd5896.webp"],"audio":"assets/mp3_01_ee1433c75d7d.mp3"},"2":{"pages":["assets/webp_04_987a3177f328.webp","assets/webp_05_687469976b29.webp","assets/webp_06_a025451ac497.webp","assets/webp_07_c441ae0bba43.webp","assets/webp_08_efaa6190fcf2.webp"],"audio":"assets/mp3_02_178e8ad0c8ea.mp3"},"3":{"pages":["assets/webp_09_2d16e68106d6.webp","assets/webp_10_45a1892ad731.webp","assets/webp_11_6cf65a8a220a.webp","assets/webp_12_32dac1269ab7.webp"],"audio":null}};
+let room='R13',group=0,session=0;
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function list(arr,tag='ol'){return `<${tag}>${arr.map(x=>`<li>${escapeHTML(x)}</li>`).join('')}</${tag}>`;}
+function bookExample(title='My title',line='My complete-sentence answer goes here.'){return `<section class="panel"><div class="tag">Use this in your book</div><h2>How to set up my book</h2><p>Start at the <b>red margin</b>, rest your writing on the blue lines, leave a line between sections, and underline the date and title using a ruler.</p><div class="bookexample"><p><u>Monday 9 November 2026</u></p><div class="empty"></div><p><u>${escapeHTML(title)}</u></p><div class="empty"></div><p>WALT: I can show my learning clearly.</p><p>SC: I use full sentences and neat writing.</p><div class="empty"></div><p>1. ${escapeHTML(line)}</p><div class="empty"></div><p>2. My next answer goes here.</p></div></section>`;}
+const storyPdfReaders=[
+ {url:'https://newzealandcurriculum.tahurangi.education.govt.nz/hidden-talent/5637158835.p',type:'resource',note:'The publisher’s story page is shown here. The original story PDF cannot yet be packaged offline; if the publisher blocks the frame, the teacher will need to supply the PDF.'},
+ {url:'https://instructionalseries.tki.org.nz/content/download/43150/481971/file/2022-SJ-L3%20JUNE-web.pdf',type:'pdf',note:'School Journal Level 3, June 2022. Find “Sunday Hero” in the issue.'},
+ {url:'https://instructionalseries.tki.org.nz/content/download/43616/486688/file/SJ%20June%2023%20L4%20Paper%20tiger.pdf',type:'pdf',note:'The individual story PDF for “Paper Tiger”.'},
+ {url:'https://esolonline.tki.org.nz/content/download/43617/486691/file/SJ%2BJune%2B2023%2BL4%2BThe%2BStunt%2Bman.pdf',type:'pdf',note:'The individual story PDF for “The Stunt Man and the Geologist”.'}
+];
+const week5Pages=[["assets/jpg_18_d8704074e38c.jpg", "assets/jpg_19_373033a772be.jpg", "assets/jpg_20_d27bae175cbf.jpg", "assets/jpg_21_82a4a0abf388.jpg"], ["assets/jpg_22_7d8ada45c57f.jpg", "assets/jpg_23_35218f506fa6.jpg", "assets/jpg_24_c2039e07d472.jpg", "assets/jpg_25_2b17730dcceb.jpg"], ["assets/jpg_26_8a3e4a9ed107.jpg", "assets/jpg_27_b4318ef0c3e9.jpg", "assets/jpg_28_67fefa65a078.jpg"], ["assets/jpg_29_bb7c1cf2fe9c.jpg", "assets/jpg_30_ed4538be914f.jpg", "assets/jpg_31_4cb042d40cb9.jpg", "assets/jpg_32_aac44a07b751.jpg"]];
+const hiddenTalentAudio="assets/mp3_03_33ee29f531b4.mp3";
+function storyReader(g){
+ const st=stories[g],pages=week5Pages[g];
+ return `<div class="embedded-reader"><h3>📚 ${escapeHTML(st.title)}</h3><p><b>${escapeHTML(st.source)}</b> · ${escapeHTML(st.author)}</p><p>All story pages are included below. Scroll down to read; no other website or internet connection is needed.</p>
+ ${g===0?`<div class="good"><b>🎧 Listen to Hidden Talent</b><p>Press play to listen while following the words on the pages.</p><audio controls preload="none" style="width:100%" src="${hiddenTalentAudio}"></audio></div>`:`<p class="hint">Audio has not been supplied for this story. Read independently or with your partner as instructed.</p>`}
+ <button class="reader-open" onclick="openStoryPages(${g})">🔍 Open full-size story pages</button>
+ <div class="story-pages">${pages.map((p,i)=>`<figure><img loading="lazy" src="${p}" alt="${escapeHTML(st.title)} story page ${i+1}"><figcaption>Story page ${i+1} of ${pages.length}</figcaption></figure>`).join('')}</div></div>`;
+}
+function openStoryPages(g){const asset={pages:week5Pages[g]},st=stories[g];let m=document.getElementById('story-modal');if(!m){m=document.createElement('div');m.id='story-modal';m.className='large-text-modal';document.body.appendChild(m)}m.innerHTML=`<div class="reader-toolbar"><strong>${escapeHTML(st.title)}</strong><button onclick="closeStoryPages()">✕ Close reader</button></div><div class="large-pages">${asset.pages.map((p,i)=>`<figure><img src="${p}" alt="${escapeHTML(st.title)} full page ${i+1}"><figcaption>Page ${i+1}</figcaption></figure>`).join('')}</div>`;m.hidden=false;document.body.style.overflow='hidden';}
+function closeStoryPages(){document.getElementById('story-modal').hidden=true;document.body.style.overflow='';}
+
+function reading(){const st=stories[group];return `<section class="panel"><div class="tag">Session 1 · ${group===0?'Reading and comprehension':'Everyone works independently'}</div><h2>📖 Independent reading & comprehension</h2><p class="pill">${escapeHTML(groups[group])}</p><h3>${escapeHTML(st.title)}</h3><p>${escapeHTML(st.source)} · ${escapeHTML(st.author)}</p><div class="good"><b>WALT:</b> Read carefully, understand the text and support my answers with evidence.<br><b>Success criteria:</b> I read independently, answer every question in a full sentence, and refer to the text.</div>${storyReader(group)}<ol><li>Find your group's story above and read it independently.</li><li>Write the date, story title and author (shown above) in your exercise book.</li><li>Answer the questions below in full sentences.</li><li>Go back to the story to find evidence for your answers.</li></ol><h3>Comprehension questions (${st.questions.length})</h3>${list(st.questions)}</section>${bookExample(st.title,'I know this because the text says…')}`;}
+function tawaReadingConference(){return `<section class="panel"><div class="tag">Session 1 · Tawa · Reading and Whaea Allie</div><h2>📖 Read, answer questions and conference with Whaea Allie</h2><p><b>Monday:</b> Tawa meets Whaea Allie during Session 1. First read your story and begin your comprehension. Bring your story and book when called to the teacher conference. Other groups work independently in Session 1.</p></section>`+reading()+conference();}
+function acrostic(){return `<section class="panel"><div class="tag">Session 3 · After mat time</div><h2>🌈 Graduate Profile acrostic poem</h2><p>Follow the steps from our acrostic poem helper. Choose <b>one</b> Graduate Profile badge: <b>Risk-Taker, Compassionate, Optimistic</b> or <b>Communicator</b>.</p><div class="good"><b>WALT:</b> Write an acrostic poem that communicates the meaning of a Graduate Profile badge.<br><b>Success criteria:</b> The first letters spell my chosen badge vertically; each line has a meaningful idea; I use precise words and improve at least one line.</div><ol><li>After mat time, look through the helper slides and examples.</li><li>Choose your badge and brainstorm actions, feelings, images and words that show its meaning.</li><li>Write the badge name vertically down your page. For <b>Risk-Taker</b>, use RISKTAKER without the hyphen for your initial letters.</li><li>Write a meaningful phrase or sentence for every letter. Your poem does not need to rhyme.</li><li>Reread it, improve one line, and share your strongest line with a partner.</li></ol><h3>Acrostic poem helper slides</h3><div class="imagegrid">${['2','3','7','8','9','10','11','12'].map(k=>`<figure><img loading="lazy" src="${helper[k]}" alt="Acrostic poem helper slide page ${k}"><figcaption>Helper · page ${k}</figcaption></figure>`).join('')}</div></section>${bookExample('My Graduate Profile Acrostic','C — Caring for others when they need help.')}`;}
+function conference(){return `<section class="panel"><div class="tag">Teacher-led small-group conference</div><h2>🗣️ Conferencing with Whaea Allie</h2><div class="good"><b>${escapeHTML(groups[group])} conference: ${conferenceTime(group)}</b><p>Check your class timetable below. Only one group meets Whaea Allie at a time.</p></div><h3>Conference timetable for ${room}</h3><div class="wordbox">${groups.map((g,i)=>`<p><b>${conferenceTime(i)}:</b> ${g} ${i===group?'← Your group':''}</p>`).join('')}</div><h3>When it is your group's conference</h3><ol><li>Bring your story and completed comprehension work.</li><li>Reread a selected section with Whaea Allie.</li><li>Explain your answers and talk about vocabulary, meaning and evidence.</li><li>Listen to feedback and identify one reading goal.</li></ol><h3>When it is NOT your conference day</h3><p>Continue reading your School Journal story independently, improve your written answers, or finish another rotation activity quietly. Do not interrupt the group conferencing.</p></section>`;}
+function hand(){let slides=[handwriting[group*2],handwriting[group*2+1]];return `<section class="panel"><div class="tag">Handwriting · Two slides for every group</div><h2>✍️ Handwriting practice</h2><p class="pill">${escapeHTML(groups[group])} · Slides ${group*2+1} and ${group*2+2}</p><div class="good"><b>WALT:</b> Form and join letters neatly and consistently.<br><b>Success criteria:</b> I complete both slides, begin at the red margin, write across the full line, and check spacing, size and shape.</div><ol><li>Open your exercise book and write the date and <b>Handwriting</b> as your title.</li><li>Look carefully at <b>both</b> handwriting slides below. Complete the practice from Slide 1, then Slide 2, in your book.</li><li>Start at the red margin, use the blue lines and write neatly all the way across each line.</li><li>Check your letter formation, joins, spacing and consistency.</li></ol><div class="imagegrid">${slides.map((src,i)=>`<figure><img loading="lazy" src="${src}" alt="${escapeHTML(groups[group])} handwriting practice slide ${i+1}"><figcaption>${escapeHTML(groups[group])} · Handwriting slide ${i+1} of 2</figcaption></figure>`).join('')}</div><h3>⭐ Extension: Watch, practise and write</h3><p>Watch each video, pause when a letter or joining pattern is demonstrated, and <b>complete the video lesson in your exercise book</b>. Copy the demonstrated letters, patterns, words or sentences. Practise each one across a full line, then check your neatness.</p><p><a class="action" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=7UZkQd6ltWc">▶ Handwriting video 1</a><a class="action" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=jCoh7paOEFw">▶ Handwriting video 2</a></p></section>${bookExample('Handwriting — video lesson','Practise the letters or words shown in the video.')}`;}
+function dictionary(){const st=stories[group];const verified=true;return `<section class="panel"><div class="tag">Dictionary Hunt · Partner-supported independent task</div><h2>🔎 Physical dictionary hunt</h2><p>Use a <b>physical dictionary available in the classroom</b>. You may work independently or quietly with a partner, but <b>each student writes their own answers</b>.</p><div class="good"><b>WALT:</b> Use alphabetical order and guide words to find meanings in a dictionary.<br><b>Success criteria:</b> I write WALT and SC in my book; find each word in a physical dictionary; record a clear meaning; and check how the word is used in the story.</div><ol><li>Write today's date and underline <b>Dictionary Hunt</b>.</li><li>Copy the <b>WALT and SC</b> from the green box into your exercise book.</li><li>Find the words below in the dictionary. Record the word and its meaning in your own book.</li><li>Use the story to check whether the dictionary meaning fits the sentence.</li><li>Work quietly with your partner and take turns using the dictionary.</li></ol><h3>${group===0?'Find these 5 words':'Find these 10 words'}</h3>${verified?`<div class="wordbox">${list(st.words)}</div><p class="muted">These are dictionary research words related to the story. Check the actual text and add any unfamiliar words you find.</p>`:`<div class="notice"><b>Teacher preparation:</b> The full text of <i>${escapeHTML(st.title)}</i> has not been supplied. To avoid inventing vocabulary and claiming it appears in the story, choose ten unfamiliar words directly from your copy, using the prompts below. Replace the prompts with the exact words before sharing with students.</div><div class="wordbox">${list(st.words)}</div>`}<h3>⭐ Extension</h3><p>Find <b>five additional unfamiliar words</b> in your own story. Look each one up in the physical dictionary and write its meaning in your book.</p></section>${bookExample('Dictionary Hunt','Word: ______   Meaning: ______')}`;}
+function extraReading(){const st=stories[group];return `<section class="panel"><div class="tag">Independent learning · Reading response</div><h2>💭 Think deeper about your story</h2><div class="good"><b>WALT:</b> Explain characters’ choices and use evidence from a text.<br><b>Success criteria:</b> I write a date and title, give two thoughtful answers in complete sentences, and support each answer with a detail from the story.</div><ol><li>Reread a section of <b>${escapeHTML(st.title)}</b> quietly.</li><li>In your book, write and underline <b>Reading Response</b>.</li><li>Describe one important choice a character makes. What does it tell you about them?</li><li>Choose a moment you would change. Explain what you would do differently and why.</li><li>Share one answer quietly with a partner, then improve your writing.</li></ol></section>${bookExample('Reading Response','One important choice was… This shows…')}`;}
+function conferenceAndHand(first){return `<div class="two-activity"><section class="panel"><h2>${timetableLabel(session)} · Two learning activities</h2><p>Complete these in the order shown. Only your reading group meets Whaea Allie. Everyone else works quietly and independently.</p><p><b>${first==='conference'?'1. Conferencing with Whaea Allie → 2. Handwriting':'1. Handwriting → 2. Conferencing with Whaea Allie'}</b></p></section>${first==='conference'?conference()+hand():hand()+conference()}</div>`;}
+const bookReviewPoster='assets/png_02_36640e01f1f6.png';
+function tawaOnlineReading(){return `<section class="panel"><div class="tag">Independent reading · Tawa</div><h2>📚 Choose EPIC or Sunshine Online</h2><div class="good"><b>WALT:</b> Read independently for enjoyment and understanding.<br><b>Success criteria:</b> I choose a suitable book, read carefully, and share something I learned or enjoyed.</div><ol><li>Choose <b>EPIC</b> or <b>Sunshine Online</b> using the links below.</li><li>Find a story at your reading level and read quietly.</li><li>When you finish, tell a partner the title, what happened, and your favourite part.</li><li>If you have time, choose another book to read.</li></ol><p><a class="reader-open" href="https://www.getepic.com/students" target="_blank" rel="noopener noreferrer">📖 Open EPIC</a> &nbsp; <a class="reader-open" href="https://www.sunshineonline.co.nz/" target="_blank" rel="noopener noreferrer">☀️ Open Sunshine Online</a></p><p class="hint">Use your class login or your teacher’s instructions to access the reading platforms.</p></section>`;}
+function bookReview(){const st=stories[group];return `<section class="panel"><div class="tag">Independent book review · Shooting Stars and Kings &amp; Queens</div><h2>📘 School Journal Book Review</h2><p>Work with a partner or in a small group. Write your own thoughtful book review in your <b>Humanities book</b>, based on <b>${escapeHTML(st.title)}</b>, the story you read in your first timetabled reading period.</p><div class="good"><b>WALT:</b> Write a clear and thoughtful book review of a School Journal story.<br><b>Success criteria:</b> I can summarise the story, share and justify my opinion, identify a key idea or message, and recommend the story with a reason.</div><img class="review-poster" src="${bookReviewPoster}" alt="School Journal Book Review instructions showing title and author, summary, response, key idea or message, and recommendation"><h3>Instructions</h3><ol><li>Work with a partner or in a small group to discuss your ideas.</li><li>Write the date and underline the heading <b>School Journal Book Review</b> in your Humanities book.</li><li>Include the <b>title and author</b> of your story.</li><li>Write a short <b>summary</b> of the main events.</li><li>Share your <b>response</b>: Did you enjoy it? Why or why not? Support your opinion.</li><li>Explain the <b>key idea or message</b> of the story.</li><li>Give a <b>recommendation</b>: Would you recommend it to someone else? Explain why.</li><li>Look back at the story to check details, ideas or short quotations.</li></ol><p class="hint"><b>Stay locked in!</b> Be ready to share your book review when we conference on the mat.</p></section>${bookExample('School Journal Book Review',st.title+' by '+st.author+'. My summary is…')}`;}
+const rotation=[
+ [tawaReadingConference,dictionary,acrostic,hand,tawaOnlineReading],
+ [reading,hand,acrostic,conference,dictionary],
+ [reading,conference,acrostic,hand,dictionary],
+ [reading,hand,acrostic,dictionary,conference]
+];
+const rotationLabels=[
+ ['Reading, comprehension & Whaea Allie','Dictionary hunt','Acrostic poetry','Handwriting','EPIC / Sunshine Online'],
+ ['Independent reading & comprehension','Handwriting','Acrostic poetry','Conferencing with Whaea Allie','Dictionary hunt'],
+ ['Independent reading & comprehension','Conferencing with Whaea Allie','Acrostic poetry','Handwriting','Dictionary hunt'],
+ ['Independent reading & comprehension','Handwriting','Acrostic poetry','Dictionary hunt','Conferencing with Whaea Allie']
+];
+function expertsActivity(){return `<section class="panel"><div class="tag">🌟 Extra for Experts · Optional challenge</div><h2>🎵 A Poet and I Didn't Know It!</h2><p>Ready for an extra challenge? Explore poetry through music and listening comprehension.</p><div class="good"><b>WALT:</b> Listen carefully to song lyrics and explain the ideas and messages we hear.<br><b>Success criteria:</b> I choose one song, listen closely, complete its comprehension activity, and explain my thinking.</div><ol><li>Open <b>A Poet and I Didn't Know It!</b> using the link below.</li><li>Explore the songs and <b>choose one</b> that interests you.</li><li>Listen carefully to your chosen song. Listen a second time if you need to.</li><li>Find the <b>comprehension activity</b> that goes with your chosen song and complete it.</li><li>If you are asked to write answers, put the date and underlined title <b>Extra for Experts – Song Comprehension</b> in your exercise book. Answer in full sentences.</li><li>Extension: Explain the message of the song and identify one interesting word, image or poetic technique you noticed.</li></ol><p><a href="https://bairdcallumj-alt.github.io/poetandididntknowit/index.html" target="_blank" rel="noopener noreferrer" class="roomlink">🎧 Open the songs and comprehension activities ↗</a></p><p class="hint">The music and comprehension activities are on the linked site. Return to this taskboard when you finish.</p></section>`;}
+function currentActivity(){return session===5?expertsActivity():`<div class="timetable-notice"><b>${room} · ${timetableLabel(session)}</b> · ${escapeHTML(groups[group])}: ${escapeHTML(rotationLabels[group][session])}</div>`+rotation[group][session]();}
+
+const tumbleIcons=[
+ ['📖','📚','✍️','🖊️','💻'],
+ ['📖','📚','✍️','🗣️','🖊️'],
+ ['📖','🗣️','✍️','🖊️','📚'],
+ ['📖','📚','✍️','🖊️','🗣️']
+];
+const tumbleShort=[
+ ['Read, comp + Whaea Allie','Dictionary hunt','Acrostic poetry','Handwriting','EPIC / Sunshine'],
+ ['Read + comprehension','Handwriting','Acrostic poetry','Whaea Allie','Dictionary hunt'],
+ ['Read + comprehension','Whaea Allie','Acrostic poetry','Handwriting','Dictionary hunt'],
+ ['Read + comprehension','Handwriting','Acrostic poetry','Dictionary hunt','Whaea Allie']
+];
+function renderTumble(){
+ const el=document.getElementById('tumbleOverview');
+ el.innerHTML=`<div class="quick-grid"><div class="quick-heading">Reading group</div>${Array.from({length:5},(_,i)=>`<div class="quick-heading">S${i+1}</div>`).join('')}${groups.map((g,j)=>`<div class="quick-group g${j}">${escapeHTML(g)}</div>${rotationLabels[j].map((activity,i)=>`<button type="button" class="quick-activity g${j} ${group===j&&session===i?'selected':''}" onclick="group=${j};session=${i};render();document.getElementById('work').scrollIntoView({behavior:'smooth',block:'start'})" title="${escapeHTML(g)} · Session ${i+1}: ${escapeHTML(activity)}" aria-label="${escapeHTML(g)}, session ${i+1}: ${escapeHTML(activity)}"><span>${escapeHTML(activity)}</span></button>`).join('')}`).join('')}</div>`;
+}
+function render(){
+
+
+renderTumble();
+document.getElementById('rooms').innerHTML=Object.keys(classes).map(r=>`<button aria-pressed="${room===r}" onclick="room='${r}';session=0;render()">${r}</button>`).join('');
+document.getElementById('classroom').href=classes[room];
+document.getElementById('groups').innerHTML=groups.map((g,i)=>`<button aria-pressed="${group===i}" onclick="group=${i};session=0;render()">${escapeHTML(g)}</button>`).join('');
+document.getElementById('studentRoster').innerHTML=`<div class="student-roster-title">👥 ${escapeHTML(groups[group])} · ${room} students</div><div class="student-subgroups">${studentGroups[room][group].map(sub=>`<div class="student-subgroup"><b>${escapeHTML(sub[0])}</b><div class="student-chips">${sub.slice(1).map(n=>`<span>${escapeHTML(n)}</span>`).join('')}</div></div>`).join('')}</div>`;
+document.getElementById('sessions').innerHTML=sessions.map((s,i)=>`<button aria-pressed="${session===i}" onclick="session=${i};render()">${timetableLabel(i)}<small>${escapeHTML(rotationLabels[group][i])}</small></button>`).join('')+`<button class="experts-tab" aria-pressed="${session===5}" onclick="session=5;render()">🌟 Extra for Experts<small>Song listening & comprehension</small></button>`;
+document.getElementById('work').innerHTML=currentActivity();
+}
+render();
+</script></body></html>
